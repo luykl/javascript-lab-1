@@ -17,7 +17,7 @@ for (let i = 0; i < lifeEvents.length; i++) {
 let counter = 0;
 let randomNumber;
 
-while (counter < 100) {
+while (true) {
     randomNumber = Math.floor((Math.random() * 10) + 1);
     if (randomNumber !== 5) {
         counter++;
@@ -31,17 +31,17 @@ while (counter < 100) {
 
 }
 
-let hours = prompt("enter hours worked");
-let wage = prompt("enter wage");
-let paycheck = hours * wage;
+// let hours = prompt("enter hours worked");
+// let wage = prompt("enter wage");
+// let paycheck = hours * wage;
 
-if (hours > 40) {
-    paycheck = hours * wage + (hours - 40) * wage * .5;
-}
+// if (hours > 40) {
+//     paycheck = hours * wage + (hours - 40) * wage * .5;
+// }
 
-console.log("Your weekly paycheck is $" + paycheck);
+// console.log("Your weekly paycheck is $" + paycheck);
 
 
-let weeksToOneMillion = Math.ceil(1000000 / paycheck);
-console.log("It will take you " + weeksToOneMillion + " weeks to earn $1 million.");
+// let weeksToOneMillion = Math.ceil(1000000 / paycheck);
+// console.log("It will take you " + weeksToOneMillion + " weeks to earn $1 million.");
 
